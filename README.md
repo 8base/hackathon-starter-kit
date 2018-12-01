@@ -4,7 +4,6 @@
 * <a href="https://nodejs.org/en/">Node.js</a>
 * <a href="https://yarnpkg.com/lang/en/docs/install/">yarn</a>
 * Yarn: `yarn global add cross-env`
-* Install 8base CLI: `yarn global add 8base`
 
 ## Data Model
 1. Login to https://app.8base.com
@@ -56,14 +55,13 @@ const PROPERTY_CREATE_MUTATION = gql`
 ```
 5. Install dependencies `yarn`;
 6. Get 8base API endpoint for your account;
-7. Start app via `cross-env REACT_APP_8BASE_API_ENDPOINT=%YOUR_ENDPOINT% npm start`;
+7. Start app via `cross-env REACT_APP_8BASE_API_ENDPOINT=!YOUR_ENDPOINT! npm start`;
 
 ## Server Logic
 
-* Sign up 8base account;
-* Install 8base CLI `npm install -g 8base`;
-* Login using CLI `8base login`;
-* Go to the server directory `cd server`;
-* Install dependencies `npm install`;
-* Deploy custom functions `8base deploy`;
-* Import schema and data via `8base import -f=DEMO.JSON`;
+1. Install 8base CLI: `yarn global add 8base`
+2. Login using CLI `8base login`;
+3. Go to the server directory `cd ../server`
+4. Take a look at `8base.yml` and `src/propertyShare.js`
+5. Deploy server logic using `8base deploy`
+6. Test the feature in the app

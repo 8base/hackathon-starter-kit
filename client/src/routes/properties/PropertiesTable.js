@@ -4,8 +4,7 @@ import * as R from 'ramda';
 import { Table, Button, Dropdown, Icon, Menu, withModal } from '@8base/boost';
 import { graphql } from 'react-apollo';
 import { DateTime } from 'luxon';
-
-import * as sharedGraphQL from 'shared/graphql';
+import gql from 'graphql-tag';
 
 import { PropertyCreateDialog } from './PropertyCreateDialog';
 import { PropertyEditDialog } from './PropertyEditDialog';
@@ -90,9 +89,11 @@ let PropertiesTable = ({ properties, openModal, closeModal }) => (
   </Table.Plate>
 );
 
+const PROPERTIES_LIST_QUERY = gql``;
+
 PropertiesTable = compose(
   withModal,
-  graphql(sharedGraphQL.PROPERTIES_LIST_QUERY, { name: 'properties' }),
+  graphql(PROPERTIES_LIST_QUERY, { name: 'properties' }),
 )(PropertiesTable);
 
 export { PropertiesTable };

@@ -2,8 +2,8 @@ import React from 'react';
 import { Form, Field } from '@8base/forms';
 import { Dialog, Grid, Button, InputField, CheckboxField, ModalContext } from '@8base/boost';
 import { graphql } from 'react-apollo';
+import gql from 'graphql-tag';
 
-import * as sharedGraphQL from 'shared/graphql';
 import { TOAST_SUCCESS_MESSAGE } from 'shared/constants';
 
 import { FileInputField } from 'shared/components';
@@ -24,7 +24,7 @@ class PropertyCreateDialog extends React.Component {
   };
 
   renderFormContent = ({ handleSubmit, invalid, submitting, pristine }) => (
-    <form onSubmit={ handleSubmit }>
+    <Form onSubmit={ handleSubmit }>
       <Dialog.Header title="New Property" onClose={ this.onClose } />
       <Dialog.Body scrollable>
         <Grid.Layout gap="sm" stretch>
@@ -58,7 +58,7 @@ class PropertyCreateDialog extends React.Component {
         <Button color="neutral" variant="outlined" disabled={ submitting } onClick={ this.onClose }>Cancel</Button>
         <Button color="red" type="submit" text="Create Property" loading={ submitting } />
       </Dialog.Footer>
-    </form>
+    </Form>
   );
 
   render() {
@@ -72,7 +72,9 @@ class PropertyCreateDialog extends React.Component {
   }
 }
 
-PropertyCreateDialog = graphql(sharedGraphQL.PROPERTY_CREATE_MUTATION, {
+const PROPERTY_CREATE_MUTATION = gql``;
+
+PropertyCreateDialog = graphql(PROPERTY_CREATE_MUTATION, {
   name: 'propertyCreate',
   options: {
     refetchQueries: ['PropertiesList'],

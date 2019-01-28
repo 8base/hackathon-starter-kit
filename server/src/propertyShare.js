@@ -1,6 +1,6 @@
-const gql = require('graphql-tag');
+import gql from 'graphql-tag';
 
-const { sendMail, GMAIL_USER } = require('./mailer');
+import { sendMail, GMAIL_USER } from './mailer';
 
 const PROPERTY_QUERY = gql`
   query Property($id: ID!) {

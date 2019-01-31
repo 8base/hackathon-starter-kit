@@ -22,7 +22,7 @@
 
 ## React
 
-1. Clone repo: `git clone https://github.com/8base/uhack.git`
+1. Clone repo: `git clone https://github.com/8base/hackathon-starter-kit.git`
 2. Go to the client directory `cd client`;
 3. Edit `src/routes/properties/PropertiesTable.js` and complete the `PROPERTIES_LIST_QUERY` GraphQL query:
 ```

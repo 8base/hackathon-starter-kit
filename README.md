@@ -7,13 +7,22 @@
 
 ## Data Model
 1. Login to https://app.8base.com
-2. Create `Properties` table with fields `Title`, `Description`, `Pictures`, `Bedrooms`, `Sq Footage`, `Bathrooms`, `Garage`, `Pool`.
-3. Create couple properties in Data
-4. Check you can query them using the API
+2. Create a `Properties` table with the following fields:
+* `Title: Text` 
+* `Description: Text`
+* `Pictures: File (Allow Many)`
+* `Bedrooms: Number`
+* `Sq Footage: Number`
+* `Bathrooms: Number`
+* `Garage: Switch`
+* `Pool: Switch`
+
+3. Click on "Data" and manually add a few Properties.
+4. Check that you can query your data using "API Explorer"
 
 ## React
 
-1. Clone repo: `git clone https://github.com/8base/uhack.git`
+1. Clone repo: `git clone https://github.com/8base/hackathon-starter-kit.git`
 2. Go to the client directory `cd client`;
 3. Edit `src/routes/properties/PropertiesTable.js` and complete the `PROPERTIES_LIST_QUERY` GraphQL query:
 ```

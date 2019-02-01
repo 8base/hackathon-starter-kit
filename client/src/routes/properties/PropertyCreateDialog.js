@@ -24,7 +24,7 @@ class PropertyCreateDialog extends React.Component {
   };
 
   renderFormContent = ({ handleSubmit, invalid, submitting, pristine }) => (
-    <Form onSubmit={ handleSubmit }>
+    <form onSubmit={ handleSubmit }>
       <Dialog.Header title="New Property" onClose={ this.onClose } />
       <Dialog.Body scrollable>
         <Grid.Layout gap="sm" stretch>
@@ -58,7 +58,7 @@ class PropertyCreateDialog extends React.Component {
         <Button color="neutral" variant="outlined" disabled={ submitting } onClick={ this.onClose }>Cancel</Button>
         <Button color="red" type="submit" text="Create Property" loading={ submitting } />
       </Dialog.Footer>
-    </Form>
+    </form>
   );
 
   render() {

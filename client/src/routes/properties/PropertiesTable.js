@@ -89,7 +89,31 @@ let PropertiesTable = ({ properties, openModal, closeModal }) => (
   </Table.Plate>
 );
 
-const PROPERTIES_LIST_QUERY = gql``;
+const PROPERTIES_LIST_QUERY = gql`
+  query PropertiesList {
+    propertiesList {      
+      items {
+        id
+        createdAt
+        updatedAt
+        pictures {
+          items {
+            id
+            downloadUrl
+            shareUrl
+          }
+        }
+        bedrooms
+        title
+        description
+        sqFootage
+        bathrooms
+        garage
+        pool
+      }
+    }
+  }
+`;
 
 PropertiesTable = compose(
   withModal,

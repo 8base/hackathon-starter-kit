@@ -2,44 +2,71 @@
 # yarn lockfile v1
 
 
-"@8base/apollo-client@^0.6.6":
-  version "0.6.6"
-  resolved "https://registry.yarnpkg.com/@8base/apollo-client/-/apollo-client-0.6.6.tgz#554a12dc90e81b1d07e6fa1651f731f6224dbbf1"
+"@8base/apollo-client@^0.10.4":
+  version "0.10.4"
+  resolved "https://registry.yarnpkg.com/@8base/apollo-client/-/apollo-client-0.10.4.tgz#6113873d7f80b9d9db009850eb7b06990f9e0f11"
+  integrity sha512-YczmUtZioxz5Ixw1qPVzLz/0hiH6u0ExafT4FzXR7afbJfqXYLZAy5a8Jyw1Jncfuch0Jvhdj89xsqYsYsD/EQ==
   dependencies:
+    "@8base/apollo-links" "^0.10.4"
+    "@babel/runtime" "^7.2.0"
     apollo-cache-inmemory "^1.2.10"
+    apollo-client "^2.4.2"
     apollo-link "1.2.1"
     apollo-link-batch-http "^1.2.2"
     apollo-link-error "^1.1.1"
+    graphql "0.13.0"
+    graphql-tag "^2.10.0"
 
-"@8base/apollo-links@^0.6.6":
-  version "0.6.6"
-  resolved "https://registry.yarnpkg.com/@8base/apollo-links/-/apollo-links-0.6.6.tgz#789c0902e2f1f894230182c5758c367c637d3614"
+"@8base/apollo-links@^0.10.4":
+  version "0.10.4"
+  resolved "https://registry.yarnpkg.com/@8base/apollo-links/-/apollo-links-0.10.4.tgz#4157070e1a75e218aa150772d0ffadf79c361567"
+  integrity sha512-FtqWUwoKHpNkuUOSJJ42wejdFmQ9NE718XG6LxfdP/mFdanWaAg6EtygGr22G/adAKVapr90nwfGzy6/GgL7Ew==
   dependencies:
-    "@8base/sdk" "^0.0.75"
+    "@8base/error-codes" "^1.0.5"
+    "@8base/sdk" "^0.0.78"
+    "@8base/utils" "^0.10.4"
+    "@babel/runtime" "^7.2.0"
     apollo-link "1.2.1"
     apollo-link-error "^1.1.0"
+    graphql "0.13.0"
     graphql-tag "^2.9.2"
+    ramda "^0.25.0"
 
-"@8base/app-provider@^0.6.5":
-  version "0.6.6"
-  resolved "https://registry.yarnpkg.com/@8base/app-provider/-/app-provider-0.6.6.tgz#f88934c99517d069c0c23594e0d8889af9031fc2"
+"@8base/app-provider@^0.10.4":
+  version "0.10.4"
+  resolved "https://registry.yarnpkg.com/@8base/app-provider/-/app-provider-0.10.4.tgz#3c68016563b90d46cf6e62cc56bac42eaf0ef31d"
+  integrity sha512-xeLGHKqQ4y4yXO3TXnOkK60mcJ7kjzaq9PjTm5UUuNry5dDY+L4vUfGGA7nBkNDBht30uVFXLdlZSZ15oGiOPA==
   dependencies:
-    "@8base/apollo-client" "^0.6.6"
-    "@8base/apollo-links" "^0.6.6"
+    "@8base/apollo-client" "^0.10.4"
+    "@8base/apollo-links" "^0.10.4"
+    "@8base/auth" "^0.10.4"
     "@8base/error-codes" "^1.0.5"
-    "@8base/sdk" "^0.0.75"
+    "@8base/sdk" "^0.0.78"
+    "@8base/table-schema-provider" "^0.10.4"
+    "@babel/runtime" "^7.2.0"
     apollo-cache-inmemory "^1.3.5"
     apollo-client "^2.4.2"
+    apollo-link-batch-http "^1.2.6"
+    apollo-link-error "^1.1.5"
     graphql "^0.13.0"
     graphql-tag "^2.9.2"
     ramda "^0.25.0"
+    react "^16.4.2"
+    react-apollo "^2.1.11"
+    react-dom "^16.4.2"
     recompose "0.27.1"
 
-"@8base/auth@^0.6.5":
-  version "0.6.6"
-  resolved "https://registry.yarnpkg.com/@8base/auth/-/auth-0.6.6.tgz#e6f5a3fe718d9382776dc3451c3b220db0ec0e74"
+"@8base/auth@^0.10.4":
+  version "0.10.4"
+  resolved "https://registry.yarnpkg.com/@8base/auth/-/auth-0.10.4.tgz#458aa516754901d58b474e93b4afe57c8fb1dee1"
+  integrity sha512-9cZrIvvVWtnLB3PHrx38sizvg67MUsZkdUI9I1XNkBx+u9zlJO50pTiU8zFpaIfAl3VcYuuQWNwaf5Nrs2wwEQ==
   dependencies:
-    auth0-js "^9.8.0"
+    "@8base/utils" "^0.10.4"
+    "@babel/runtime" "^7.2.0"
+    apollo-client "^2.4.12"
+    react-apollo "^2.1.11"
+    react-dom "^16.7.0"
+    recompose "^0.30.0"
 
 "@8base/boost@0.8.11":
   version "0.8.11"
@@ -62,23 +89,48 @@
   version "1.0.10"
   resolved "https://registry.yarnpkg.com/@8base/error-codes/-/error-codes-1.0.10.tgz#baf553f04c03119db83cbe4306d4a01c2c6b7dc1"
 
-"@8base/file-input@^0.6.5":
-  version "0.6.6"
-  resolved "https://registry.yarnpkg.com/@8base/file-input/-/file-input-0.6.6.tgz#5de97c5756bdd79bdcaeef61f17f98d0d6ad1638"
+"@8base/file-input@^0.10.4":
+  version "0.10.4"
+  resolved "https://registry.yarnpkg.com/@8base/file-input/-/file-input-0.10.4.tgz#d4b6098b6c9cee97ed6d3b1713168c0624dace0f"
+  integrity sha512-RZIr7z3hRA4IxgaJLxKluHVwUzHQOjxfaFu57JD2X0vxErr7/8XT6SnxsE9M3MCm3dWnO5gYeSstGk2e02ah7Q==
   dependencies:
+    "@babel/runtime" "^7.2.0"
+    apollo-client "^2.4.1"
     filestack-js "^1.7.2"
+    graphql "0.13.0"
+    graphql-tag "^2.9.2"
+    react "^16.4.1"
+    react-apollo "^2.1.6"
+    react-dom "^16.4.1"
 
-"@8base/forms@^0.6.5":
-  version "0.6.6"
-  resolved "https://registry.yarnpkg.com/@8base/forms/-/forms-0.6.6.tgz#36e4cd262c4909832d06e24fe10d3aeb73427046"
+"@8base/forms@^0.10.4":
+  version "0.10.4"
+  resolved "https://registry.yarnpkg.com/@8base/forms/-/forms-0.10.4.tgz#0870128acb833f1d6cb1a2aa256414d82602753b"
+  integrity sha512-GWe5Knof/FL5mXq/mNM86AwHQsr6ILy77xuwABSXw/Dz+PGBIXQg9EVhDl2pfHqrDTu+dRodNI8W7T6AGx6Z+g==
   dependencies:
+    "@8base/auth" "^0.10.4"
     "@8base/error-codes" "^1.0.8"
-    "@8base/utils" "^0.6.6"
-    "@8base/validate" "^0.6.6"
+    "@8base/table-schema-provider" "^0.10.4"
+    "@8base/utils" "^0.10.4"
+    "@8base/validate" "^0.10.4"
+    "@babel/runtime" "^7.3.1"
+    final-form "^4.10.0"
+    final-form-arrays "^1.1.0"
+    graphql "^14.1.1"
+    graphql-tag "^2.10.1"
+    prop-types "^15.6.1"
+    ramda "^0.25.0"
+    react "^16.4.1"
+    react-apollo "^2.4.0"
+    react-dom "^16.4.1"
+    react-final-form "^3.6.5"
+    react-final-form-arrays "^1.0.6"
+    recompose "^0.27.1"
 
-"@8base/sdk@^0.0.75":
-  version "0.0.75"
-  resolved "https://registry.yarnpkg.com/@8base/sdk/-/sdk-0.0.75.tgz#df365c9386164d5b942ac6b9b08fad4ecc467bd1"
+"@8base/sdk@^0.0.78":
+  version "0.0.78"
+  resolved "https://registry.yarnpkg.com/@8base/sdk/-/sdk-0.0.78.tgz#63fb2cc96483311b95e6e31fe0abd17fec18f01b"
+  integrity sha512-y/eX9yc9WM49O14Uxnx7Xjt+v6oG1XmpdySse5Vsts9DFl9R0iF1tFeCs7YY5OIR/UjDfUqfRJ1xzDu6aDLsJQ==
   dependencies:
     "@8base/error-codes" "^1.0.6"
     apollo-link "1.2.1"
@@ -96,19 +148,49 @@
     typed-graphql "^1.0.2"
     zen-observable "^0.6.0"
 
-"@8base/table-schema-provider@^0.6.5":
-  version "0.6.6"
-  resolved "https://registry.yarnpkg.com/@8base/table-schema-provider/-/table-schema-provider-0.6.6.tgz#3262ce483d5b09d577ccfc0fa55f69fcabe3e60d"
+"@8base/table-schema-provider@^0.10.4":
+  version "0.10.4"
+  resolved "https://registry.yarnpkg.com/@8base/table-schema-provider/-/table-schema-provider-0.10.4.tgz#ee84adf4abfef78539d77d35159279bb09117c29"
+  integrity sha512-rOFmLRoZN3D5QRgyY2e5h1SesPRhfBCNnt6U5PCJ9dP7E/cKikgsOHNV2I7SWoGW0j1opMgBe2rN2C7wr4FuVw==
   dependencies:
+    "@8base/auth" "^0.10.4"
+    "@8base/utils" "^0.10.4"
+    "@babel/runtime" "^7.3.1"
+    apollo-client "^2.4.1"
+    graphql "^14.1.1"
+    graphql-tag "^2.10.1"
+    ramda "^0.25.0"
+    react "^16.4.1"
+    react-apollo "^2.1.6"
+    react-dom "^16.4.1"
     reselect "^3.0.1"
 
-"@8base/utils@^0.6.6":
-  version "0.6.6"
-  resolved "https://registry.yarnpkg.com/@8base/utils/-/utils-0.6.6.tgz#526b63d6ce1dae6e9aec40320a222193b0e4a04b"
+"@8base/utils@^0.10.4":
+  version "0.10.4"
+  resolved "https://registry.yarnpkg.com/@8base/utils/-/utils-0.10.4.tgz#60d541d820977ed8052234fa280a2de90d83fa81"
+  integrity sha512-NwlFe+5M8GD0iwU2EgwBLQE83V3YEEzlmHkWb7yQDwJJX5l7NwRrPtR8wrsiGgDSVhXNbJdPERmE/ZXrITG05Q==
+  dependencies:
+    "@babel/runtime" "^7.3.1"
+    ramda "^0.25.0"
 
-"@8base/validate@^0.6.6":
-  version "0.6.6"
-  resolved "https://registry.yarnpkg.com/@8base/validate/-/validate-0.6.6.tgz#fd831cfd9f8ed151154682767c47686a7e682514"
+"@8base/validate@^0.10.4":
+  version "0.10.4"
+  resolved "https://registry.yarnpkg.com/@8base/validate/-/validate-0.10.4.tgz#59493c7aaf66a14d2c09d7f89b2d17ce9b9ddaac"
+  integrity sha512-JpvzR+jNr2+rsNpcDI0+MtE9TdVzCwspNVXGHURducw8BfL5T7ndB5IJ/mz89zmJveXrc3qkVu2BaO7UJ89qxQ==
+  dependencies:
+    "@8base/utils" "^0.10.4"
+    "@babel/runtime" "^7.3.1"
+    ramda "^0.25.0"
+
+"@8base/web-auth0-auth-client@^0.10.4":
+  version "0.10.4"
+  resolved "https://registry.yarnpkg.com/@8base/web-auth0-auth-client/-/web-auth0-auth-client-0.10.4.tgz#b950fb88780b911f839154e170d2ca7c4dde999d"
+  integrity sha512-RCOp335QVM+qNqVfTtRDFVq3itIIsbGNbohVzZzzjVFrf85Am4Ew0e+8wNPKW5EQcNzd8azjgAftdOzU9iMC4Q==
+  dependencies:
+    "@8base/utils" "^0.10.4"
+    "@babel/runtime" "^7.3.1"
+    auth0-js "^9.9.1"
+    ramda "^0.26.1"
 
 "@babel/code-frame@7.0.0", "@babel/code-frame@^7.0.0", "@babel/code-frame@^7.0.0-beta.35":
   version "7.0.0"
@@ -811,6 +893,13 @@
   dependencies:
     regenerator-runtime "^0.12.0"
 
+"@babel/runtime@^7.0.0", "@babel/runtime@^7.2.0", "@babel/runtime@^7.3.1":
+  version "7.3.1"
+  resolved "https://registry.yarnpkg.com/@babel/runtime/-/runtime-7.3.1.tgz#574b03e8e8a9898eaf4a872a92ea20b7846f6f2a"
+  integrity sha512-7jGW8ppV0ant637pIqAcFfQDDH1orEPGJb8aXfUozuCU3QqX7rX4DA8iwrbPrR1hcH0FTTHz47yQnk+bl5xHQA==
+  dependencies:
+    regenerator-runtime "^0.12.0"
+
 "@babel/runtime@^7.1.2", "@babel/runtime@^7.1.5":
   version "7.1.5"
   resolved "https://registry.yarnpkg.com/@babel/runtime/-/runtime-7.1.5.tgz#4170907641cf1f61508f563ece3725150cc6fe39"
@@ -1223,6 +1312,28 @@ apollo-cache@1.1.21, apollo-cache@^1.1.21:
   dependencies:
     apollo-utilities "^1.0.26"
 
+apollo-cache@1.1.25:
+  version "1.1.25"
+  resolved "https://registry.yarnpkg.com/apollo-cache/-/apollo-cache-1.1.25.tgz#87a15a2a19993bb07234ccee6839b59d6fb49ac5"
+  integrity sha512-9HhI/tVEHAeGaJJvi1Vpf6PzXUCA0PqNbigi2G3uOc180JjxbcaBvEbKXMEDb/UyTXkFWzI4PiPDuDQFqmIMSA==
+  dependencies:
+    apollo-utilities "^1.1.2"
+    tslib "^1.9.3"
+
+apollo-client@^2.4.1, apollo-client@^2.4.12:
+  version "2.4.12"
+  resolved "https://registry.yarnpkg.com/apollo-client/-/apollo-client-2.4.12.tgz#9fa15f502d04f8cc788a9fbb825163b437681504"
+  integrity sha512-E5ClFSB9btJLYibLKwLDSCg+w9tI+25eZgXOM+DClawu7of4d/xhuV/xvpuZpsMP3qwrp0QPacBnfG4tUJs3/w==
+  dependencies:
+    "@types/zen-observable" "^0.8.0"
+    apollo-cache "1.1.25"
+    apollo-link "^1.0.0"
+    apollo-link-dedup "^1.0.0"
+    apollo-utilities "1.1.2"
+    symbol-observable "^1.0.2"
+    tslib "^1.9.3"
+    zen-observable "^0.8.0"
+
 apollo-client@^2.4.2, apollo-client@^2.4.5:
   version "2.4.7"
   resolved "https://registry.yarnpkg.com/apollo-client/-/apollo-client-2.4.7.tgz#b6712fd4c9ba346e3c44cfec7e6868e532b6a957"
@@ -1245,11 +1356,27 @@ apollo-link-batch-http@^1.2.2:
     apollo-link-batch "^1.1.5"
     apollo-link-http-common "^0.2.6"
 
+apollo-link-batch-http@^1.2.6:
+  version "1.2.6"
+  resolved "https://registry.yarnpkg.com/apollo-link-batch-http/-/apollo-link-batch-http-1.2.6.tgz#24fa42dd39c87ffdfeaf83b61fe0ea2f28ae88ee"
+  integrity sha512-GdKXbF/Tczns7OoNJcnnFgvoYSVjnKI97irToagJ9O0jRfortWSKz4pAAkaUkzzxAouedTxl5A+W31ztzxqibA==
+  dependencies:
+    apollo-link "^1.2.6"
+    apollo-link-batch "^1.1.7"
+    apollo-link-http-common "^0.2.8"
+
 apollo-link-batch@^1.1.5:
   version "1.1.5"
   resolved "https://registry.yarnpkg.com/apollo-link-batch/-/apollo-link-batch-1.1.5.tgz#ff1473659beb3263f4bfb328d14cab983501bd28"
   dependencies:
     apollo-link "^1.2.4"
+
+apollo-link-batch@^1.1.7:
+  version "1.1.7"
+  resolved "https://registry.yarnpkg.com/apollo-link-batch/-/apollo-link-batch-1.1.7.tgz#823817b06aae04e1b2d74515f9ef259ebcc9aa6f"
+  integrity sha512-SANfQ0wJlJrfk82adD1ZNx1I3tgGiVh1zJTS2or+s9sKByaxhvHB3aZ6mu23zU0f+Z24FI53YG4ZNjDE1zHqpQ==
+  dependencies:
+    apollo-link "^1.2.6"
 
 apollo-link-dedup@^1.0.0:
   version "1.0.11"
@@ -1263,11 +1390,26 @@ apollo-link-error@^1.1.0, apollo-link-error@^1.1.1:
   dependencies:
     apollo-link "^1.2.4"
 
+apollo-link-error@^1.1.5:
+  version "1.1.5"
+  resolved "https://registry.yarnpkg.com/apollo-link-error/-/apollo-link-error-1.1.5.tgz#1d600dfa75c4e4bf017f50d60da7b375b53047ab"
+  integrity sha512-gE0P711K+rI3QcTzfYhzRI9axXaiuq/emu8x8Y5NHK9jl9wxh7qmEc3ZTyGpnGFDDTXfhalmX17X5lp3RCVHDQ==
+  dependencies:
+    apollo-link "^1.2.6"
+    apollo-link-http-common "^0.2.8"
+
 apollo-link-http-common@^0.2.6:
   version "0.2.6"
   resolved "https://registry.yarnpkg.com/apollo-link-http-common/-/apollo-link-http-common-0.2.6.tgz#47b9012500599fe343e2e87378026384b4fc8c1f"
   dependencies:
     apollo-link "^1.2.4"
+
+apollo-link-http-common@^0.2.8:
+  version "0.2.8"
+  resolved "https://registry.yarnpkg.com/apollo-link-http-common/-/apollo-link-http-common-0.2.8.tgz#c6deedfc2739db8b11013c3c2d2ccd657152941f"
+  integrity sha512-gGmXZN8mr7e9zjopzKQfZ7IKnh8H12NxBDzvp9nXI3U82aCVb72p+plgoYLcpMY8w6krvoYjgicFmf8LO20TCQ==
+  dependencies:
+    apollo-link "^1.2.6"
 
 apollo-link@1.2.1:
   version "1.2.1"
@@ -1284,11 +1426,27 @@ apollo-link@^1.0.0, apollo-link@^1.2.4:
     apollo-utilities "^1.0.0"
     zen-observable-ts "^0.8.11"
 
+apollo-link@^1.2.6:
+  version "1.2.6"
+  resolved "https://registry.yarnpkg.com/apollo-link/-/apollo-link-1.2.6.tgz#d9b5676d79c01eb4e424b95c7171697f6ad2b8da"
+  integrity sha512-sUNlA20nqIF3gG3F8eyMD+mO80fmf3dPZX+GUOs3MI9oZR8ug09H3F0UsWJMcpEg6h55Yy5wZ+BMmAjrbenF/Q==
+  dependencies:
+    apollo-utilities "^1.0.0"
+    zen-observable-ts "^0.8.13"
+
 apollo-utilities@1.0.26, apollo-utilities@^1.0.0, apollo-utilities@^1.0.26:
   version "1.0.26"
   resolved "https://registry.yarnpkg.com/apollo-utilities/-/apollo-utilities-1.0.26.tgz#589c66bf4d16223531351cf667a230c787def1da"
   dependencies:
     fast-json-stable-stringify "^2.0.0"
+
+apollo-utilities@1.1.2, apollo-utilities@^1.1.2:
+  version "1.1.2"
+  resolved "https://registry.yarnpkg.com/apollo-utilities/-/apollo-utilities-1.1.2.tgz#aa5eca9d1f1eb721c381a22e0dde03559d856db3"
+  integrity sha512-EjDx8vToK+zkWIxc76ZQY/irRX52puNg04xf/w8R0kVTDAgHuVfnFVC01O5vE25kFnIaa5em0pFI0p9b6YMkhQ==
+  dependencies:
+    fast-json-stable-stringify "^2.0.0"
+    tslib "^1.9.3"
 
 append-transform@^0.4.0:
   version "0.4.0"
@@ -1457,9 +1615,10 @@ atob@^2.1.1:
   version "2.1.2"
   resolved "https://registry.yarnpkg.com/atob/-/atob-2.1.2.tgz#6d9517eb9e030d2436666651e86bd9f6f13533c9"
 
-auth0-js@^9.8.0:
-  version "9.8.2"
-  resolved "https://registry.yarnpkg.com/auth0-js/-/auth0-js-9.8.2.tgz#0c3b4d9c95d828af70182334e9793948e10e356a"
+auth0-js@^9.9.1:
+  version "9.10.0"
+  resolved "https://registry.yarnpkg.com/auth0-js/-/auth0-js-9.10.0.tgz#56d7886d4994fd94986778f0799d93340202c100"
+  integrity sha512-cHE4cGQRMjCS6IorIWdH2wdYSpDQchHq/xQOn7FlEaquDrb2zgQi4G5AWzO7wW2ED4UZsX4rHElc2BMZev8rGA==
   dependencies:
     base64-js "^1.2.0"
     idtoken-verifier "^1.2.0"
@@ -4175,6 +4334,11 @@ graphql-tag@^2.10.0, graphql-tag@^2.9.2:
   version "2.10.0"
   resolved "https://registry.yarnpkg.com/graphql-tag/-/graphql-tag-2.10.0.tgz#87da024be863e357551b2b8700e496ee2d4353ae"
 
+graphql-tag@^2.10.1:
+  version "2.10.1"
+  resolved "https://registry.yarnpkg.com/graphql-tag/-/graphql-tag-2.10.1.tgz#10aa41f1cd8fae5373eaf11f1f67260a3cad5e02"
+  integrity sha512-jApXqWBzNXQ8jYa/HLkZJaVw9jgwNqZkywa2zfFn16Iv1Zb7ELNHkJaXHR7Quvd5SIGsy6Ny7SUKATgnu05uEg==
+
 graphql@0.13.0:
   version "0.13.0"
   resolved "http://registry.npmjs.org/graphql/-/graphql-0.13.0.tgz#d1b44a282279a9ce0a6ec1037329332f4c1079b6"
@@ -4186,6 +4350,13 @@ graphql@^0.13.0:
   resolved "http://registry.npmjs.org/graphql/-/graphql-0.13.2.tgz#4c740ae3c222823e7004096f832e7b93b2108270"
   dependencies:
     iterall "^1.2.1"
+
+graphql@^14.1.1:
+  version "14.1.1"
+  resolved "https://registry.yarnpkg.com/graphql/-/graphql-14.1.1.tgz#d5d77df4b19ef41538d7215d1e7a28834619fac0"
+  integrity sha512-C5zDzLqvfPAgTtP8AUPIt9keDabrdRAqSWjj2OPRKrKxI9Fb65I36s1uCs1UUBFnSWTdO7hyHi7z1ZbwKMKF6Q==
+  dependencies:
+    iterall "^1.2.2"
 
 growly@^1.3.0:
   version "1.3.0"
@@ -5127,7 +5298,7 @@ iterall@1.1.x:
   version "1.1.4"
   resolved "https://registry.yarnpkg.com/iterall/-/iterall-1.1.4.tgz#0db40d38fdcf53ae14dc8ec674e62ab190d52cfc"
 
-iterall@^1.2.1:
+iterall@^1.2.1, iterall@^1.2.2:
   version "1.2.2"
   resolved "https://registry.yarnpkg.com/iterall/-/iterall-1.2.2.tgz#92d70deb8028e0c39ff3164fdbf4d8b088130cd7"
 
@@ -7575,6 +7746,11 @@ ramda@^0.25.0:
   version "0.25.0"
   resolved "https://registry.yarnpkg.com/ramda/-/ramda-0.25.0.tgz#8fdf68231cffa90bc2f9460390a0cb74a29b29a9"
 
+ramda@^0.26.1:
+  version "0.26.1"
+  resolved "https://registry.yarnpkg.com/ramda/-/ramda-0.26.1.tgz#8d41351eb8111c55353617fc3bbffad8e4d35d06"
+  integrity sha512-hLWjpy7EnsDBb0p+Z3B7rPi3GDeRG5ZtiI33kJhTt+ORCd38AbAIjB/9zRIUoeTbE/AVX5ZkU7m6bznsvrf8eQ==
+
 randomatic@^3.0.0:
   version "3.1.1"
   resolved "https://registry.yarnpkg.com/randomatic/-/randomatic-3.1.1.tgz#b776efc59375984e36c537b2f51a1f0aff0da1ed"
@@ -7617,6 +7793,18 @@ rc@^1.2.7:
     ini "~1.3.0"
     minimist "^1.2.0"
     strip-json-comments "~2.0.1"
+
+react-apollo@^2.1.11, react-apollo@^2.1.6, react-apollo@^2.4.0:
+  version "2.4.1"
+  resolved "https://registry.yarnpkg.com/react-apollo/-/react-apollo-2.4.1.tgz#89db63ebacf01c1603553bb476f089492aaeab2c"
+  integrity sha512-fSaiwXzY5xRmqKuGCtkMON8paL4/rKf4pB2aSI/0Ot8tn+gJisFqZ0iz9Pxvl6MHnJm1/gjJD3X1J4KmbYN2Yw==
+  dependencies:
+    fbjs "^1.0.0"
+    hoist-non-react-statics "^3.0.0"
+    invariant "^2.2.2"
+    lodash.flowright "^3.5.0"
+    lodash.isequal "^4.5.0"
+    prop-types "^15.6.0"
 
 react-apollo@^2.2.4:
   version "2.3.2"
@@ -7677,6 +7865,16 @@ react-dev-utils@^6.1.1:
     strip-ansi "4.0.0"
     text-table "0.2.0"
 
+react-dom@^16.4.1, react-dom@^16.4.2, react-dom@^16.7.0:
+  version "16.7.0"
+  resolved "https://registry.yarnpkg.com/react-dom/-/react-dom-16.7.0.tgz#a17b2a7ca89ee7390bc1ed5eb81783c7461748b8"
+  integrity sha512-D0Ufv1ExCAmF38P2Uh1lwpminZFRXEINJe53zRAbm4KPwSyd6DY/uDoS0Blj9jvPpn1+wivKpZYc8aAAN/nAkg==
+  dependencies:
+    loose-envify "^1.1.0"
+    object-assign "^4.1.1"
+    prop-types "^15.6.2"
+    scheduler "^0.12.0"
+
 react-dom@^16.6.0:
   version "16.6.3"
   resolved "https://registry.yarnpkg.com/react-dom/-/react-dom-16.6.3.tgz#8fa7ba6883c85211b8da2d0efeffc9d3825cccc0"
@@ -7697,13 +7895,13 @@ react-error-overlay@^5.1.0:
   version "5.1.0"
   resolved "https://registry.yarnpkg.com/react-error-overlay/-/react-error-overlay-5.1.0.tgz#c516995a5652e7bfbed8b497910d5280df74a7e8"
 
-react-final-form-arrays@^1.1.0:
+react-final-form-arrays@^1.0.6, react-final-form-arrays@^1.1.0:
   version "1.1.0"
   resolved "https://registry.yarnpkg.com/react-final-form-arrays/-/react-final-form-arrays-1.1.0.tgz#ac1232d26483b996a5f57395aab4886a1b01d9a0"
   dependencies:
     react-lifecycles-compat "^3.0.4"
 
-react-final-form@^3.6.7:
+react-final-form@^3.6.5, react-final-form@^3.6.7:
   version "3.7.0"
   resolved "https://registry.yarnpkg.com/react-final-form/-/react-final-form-3.7.0.tgz#89196cc18340d0bcdb308941ea3e5dafe0f26684"
   dependencies:
@@ -7869,6 +8067,16 @@ react-transition-group@^2.2.1, react-transition-group@^2.4.0:
     prop-types "^15.6.2"
     react-lifecycles-compat "^3.0.4"
 
+react@^16.4.1, react@^16.4.2:
+  version "16.7.0"
+  resolved "https://registry.yarnpkg.com/react/-/react-16.7.0.tgz#b674ec396b0a5715873b350446f7ea0802ab6381"
+  integrity sha512-StCz3QY8lxTb5cl2HJxjwLFOXPIFQp+p+hxQfc8WE0QiLfCtIlKj8/+5tjjKm8uSTlAW+fCPaavGFS06V9Ar3A==
+  dependencies:
+    loose-envify "^1.1.0"
+    object-assign "^4.1.1"
+    prop-types "^15.6.2"
+    scheduler "^0.12.0"
+
 react@^16.6.0:
   version "16.6.3"
   resolved "https://registry.yarnpkg.com/react/-/react-16.6.3.tgz#25d77c91911d6bbdd23db41e70fb094cc1e0871c"
@@ -7951,11 +8159,23 @@ realpath-native@^1.0.0:
   dependencies:
     util.promisify "^1.0.0"
 
-recompose@0.27.1, recompose@^0.27.0:
+recompose@0.27.1, recompose@^0.27.0, recompose@^0.27.1:
   version "0.27.1"
   resolved "https://registry.yarnpkg.com/recompose/-/recompose-0.27.1.tgz#1a49e931f183634516633bbb4f4edbfd3f38a7ba"
   dependencies:
     babel-runtime "^6.26.0"
+    change-emitter "^0.1.2"
+    fbjs "^0.8.1"
+    hoist-non-react-statics "^2.3.1"
+    react-lifecycles-compat "^3.0.2"
+    symbol-observable "^1.0.4"
+
+recompose@^0.30.0:
+  version "0.30.0"
+  resolved "https://registry.yarnpkg.com/recompose/-/recompose-0.30.0.tgz#82773641b3927e8c7d24a0d87d65aeeba18aabd0"
+  integrity sha512-ZTrzzUDa9AqUIhRk4KmVFihH0rapdCSMFXjhHbNrjAWxBuUD/guYlyysMnuHjlZC/KRiOKRtB4jf96yYSkKE8w==
+  dependencies:
+    "@babel/runtime" "^7.0.0"
     change-emitter "^0.1.2"
     fbjs "^0.8.1"
     hoist-non-react-statics "^2.3.1"
@@ -8300,6 +8520,14 @@ saxes@^3.1.3:
 scheduler@^0.11.2:
   version "0.11.2"
   resolved "https://registry.yarnpkg.com/scheduler/-/scheduler-0.11.2.tgz#a8db5399d06eba5abac51b705b7151d2319d33d3"
+  dependencies:
+    loose-envify "^1.1.0"
+    object-assign "^4.1.1"
+
+scheduler@^0.12.0:
+  version "0.12.0"
+  resolved "https://registry.yarnpkg.com/scheduler/-/scheduler-0.12.0.tgz#8ab17699939c0aedc5a196a657743c496538647b"
+  integrity sha512-t7MBR28Akcp4Jm+QoR63XgAi9YgCUmgvDHqf5otgAj4QvdoBE4ImCX0ffehefePPG+aitiYHp0g/mW6s4Tp+dw==
   dependencies:
     loose-envify "^1.1.0"
     object-assign "^4.1.1"
@@ -9875,6 +10103,13 @@ yargs@^11.0.0:
 zen-observable-ts@^0.8.11, zen-observable-ts@^0.8.6:
   version "0.8.11"
   resolved "https://registry.yarnpkg.com/zen-observable-ts/-/zen-observable-ts-0.8.11.tgz#d54a27cd17dc4b4bb6bd008e5c096af7fcb068a9"
+  dependencies:
+    zen-observable "^0.8.0"
+
+zen-observable-ts@^0.8.13:
+  version "0.8.13"
+  resolved "https://registry.yarnpkg.com/zen-observable-ts/-/zen-observable-ts-0.8.13.tgz#ae1fd77c84ef95510188b1f8bca579d7a5448fc2"
+  integrity sha512-WDb8SM0tHCb6c0l1k60qXWlm1ok3zN9U4VkLdnBKQwIYwUoB9psH7LIFgR+JVCCMmBxUgOjskIid8/N02k/2Bg==
   dependencies:
     zen-observable "^0.8.0"
 

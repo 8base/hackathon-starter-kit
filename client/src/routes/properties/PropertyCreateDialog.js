@@ -72,7 +72,13 @@ class PropertyCreateDialog extends React.Component {
   }
 }
 
-const PROPERTY_CREATE_MUTATION = gql``;
+const PROPERTY_CREATE_MUTATION = gql`
+  mutation PropertyCreate($data: PropertyCreateInput!) {
+    propertyCreate(data: $data) {
+      id
+    }
+  }
+`;
 
 PropertyCreateDialog = graphql(PROPERTY_CREATE_MUTATION, {
   name: 'propertyCreate',

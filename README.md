@@ -10,7 +10,7 @@
 2. Create a `Properties` table with the following fields:
 * `Title: Text` 
 * `Description: Text`
-* `Pictures: File (Allow Many)`
+* `Pictures: File (Allow Multiple)`
 * `Bedrooms: Number`
 * `Sq Footage: Number`
 * `Bathrooms: Number`

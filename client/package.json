@@ -8,7 +8,7 @@
     "@8base/file-input": "^0.10.4",
     "@8base/forms": "^0.10.4",
     "@8base/table-schema-provider": "^0.10.4",
-    "@8base/web-auth0-auth-client": "^0.10.4",
+    "@8base/web-auth0-auth-client": "^2.0.0",
     "apollo-client": "^2.4.5",
     "emotion": "^9.2.12",
     "final-form": "^4.10.0",
